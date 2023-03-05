@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Richie Chan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    #aboutme {
+      font-size: 1.1em;
+    }
+
+    .date {
+      font-size: 0.9em;
+    }
+
+    .zoom {
+      transition: transform .1s;
+    }
+
+    .zoom:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Richie Chan</b></h1>
+      <h2><b>Tsz Fung Chan</b></h2>
+      <p>Computer Programmer and Engineer</p>
+      <a href="resume/richieChanResume.pdf" download>
+        <button type="button" class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      </a>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p id="aboutme"> I am a Computer Programming Student studied in Sheridan College. Looking for opputunities in
+        software engineer field.
+        I was previously a Mechanical Engineer, with 1 year on-site and 1 year office design experience. I consider
+        myself as a hardworking,
+        independent, outgoing and helpful person.
+      </p>
+      <h3 class="w3-padding-16">My Skills</h3>
+
+      <p class="w3-wide">Programming Skills:</p>
+      <ul>
+        <li>Java</li>
+        <li>HTML & CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>MySQL</li>
+      </ul>
+
+      <p class="w3-wide">Engineering Skills:</p>
+      <ul>
+        <li>AutoCAD</li>
+        <li>Revit BIM</li>
+        <li>Plumbing and Drainage Design</li>
+        <li>Mechanical Design</li>
+      </ul>
+
+      <!-- Employment History -->
+      <h3 class="w3-padding-24">Employment History</h3>
+
+      <img src="images/Work/UNIQLO.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Store Associate</span> Uniqlo Vaughan Mills</b></p>
+      <p class="date">Oct 2021 - Jan 2022, Mar 2022 - Now</p>
+      <p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Responsible for restocking, customer services, cashier and layout changes.</p><br>
+
+      <img src="images/Work/aurecon.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Assistant Mechanical Engineer</span> Aurecon (Hong
+          Kong) Ltd.</b></p>
+      <p class="date">Mar 2020 - May 2021</p>
+      <p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Click <a href="aurecon.html" target="_blank">here</a> to see my projects</p><br>
+
+      <img src="images/Work/hiphing.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Assistant Building Service Engineer</span> Hip Hing
+          Construction Company Limited</b></p>
+      <p class="date">Jul 2019 - Mar 2020</p>
+      <p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Click <a href="hiphing.html" target="_blank">here</a> to see my projects</p><br>
+
+      <img src="images/Work/TTC_cropped.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Student Intern</span> HKUST's Technology Transfer
+          Centre</b></p>
+      <p class="date">Jan 2016 - Jan 2018</p><br>
+
+      <!-- Education History -->
+      <h3 class="w3-padding-24">Education</h3>
+
+      <img src="images/Education/sheridan.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+        style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Sheridan College</span></b></p>
+      <p>Diploma in Computer Programming</p><br>
+
+      <img src="images/Education/HKUST.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Hong Kong University of Science and
+            Technology</span></b></p>
+      <p>Bachelor of Engineering in Mechanical Engineering</p>
+      <p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Click <a href="aurecon.html" target="_blank">here</a> to see my projects</p><br>
+
+      <img src="images/Education/TUE.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><b><span class="w3-large w3-text-black w3-margin-right">Technische Universiteit Eindhoven</span></b></p>
+      <p>Exchange Student</p><br>
+
+
+      <!-- Projects Section -->
+      <div class="w3-padding-32 w3-content" id="projects">
+        <h2 class="w3-text-grey">Proejcts</h2>
+        <hr class="w3-opacity">
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+            <!-- FYP Flapping Wing Robot -->
+            <a href="hkust.html"><img src="images/Projects/FYP.jpg" style="width:100%" class="zoom"></a>
+            <img src="images/Projects/Beerpouring.jpg" style="width:100%" class="zoom">
+            <img src="images/Projects/Kokohills.jpg" style="width:100%" class="zoom">
+          </div>
+
+          <div class="w3-half">
+            <img src="images/Projects/Galaxy.jpg" style="width:100%" class="zoom">
+            <img src="images/Projects/128.jpg" style="width:100%" class="zoom">
+            <img src="images/Projects/TKSt.jpg" style="width:100%" class="zoom">
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Grid for pricing tables -->
+      <h3 class="w3-padding-16">My Price</h3>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">5GB Storage</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">50GB Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        <!-- End Grid/Pricing tables -->
+      </div>
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toronto, Canada</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 437-988-5304</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: tfchanag1997@outlook.com</p>
+        <p><i class="fa fa-linkedin-square fa-fw w3-xxlarge w3-margin-right"> </i>LinkedIn:
+          <a href="https://www.linkedin.com/in/richie-chan-12a3ab212/" target="_blank">Richie Chan</a>
+        </p>
+
+      </div>
+
+      <!-- Image of location/map -->
+      <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale"
+        style="width:100%;margin:32px 0">
+
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <!-- End footer -->
+    </footer>
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "30%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
